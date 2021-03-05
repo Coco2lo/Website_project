@@ -2,29 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My first web site with git</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-        h1, h2, p, form{
-        position: relative;
-        font-size: 100;
-        margin-top: 17%;
-        text-align: center;
-        }
-    </style>
+    <title>Grizzlys Grenoble</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    <h1>Welcome</h1>
-    <h2>What you want to do now ?</h2>
-    <p>Now we try to go a little bit longuer you're ok ?</p>
-</body>
+    <!-- barre de navigation -->
+    <nav>
+        <h1>Grizzlys</h1>
+        <div class="onglet">
+            <a class="link">Accueil</a>
+            <a class="link">Club</a>
+            <a class="link">Equipes</a>
+            <a class="link" href="https://grizzlys-baseball.vestiaire-officiel.com/shop/grizzlys-baseball">Boutique</a>
+            <a class="link">Informations</a>
+            <a class="link">Formations</a>
+            <form>
+                <input type="search" placeholder="Recherches">
+            </form>
+            <p><i class="far fa-heart"></i></p>
+            <p><i class="fas fa-shopping-cart"></i></p>
+        </div>
+    </nav>
+    <!-- fin barre de navigation -->
 
-<footer>
-    <form action="https://twitter.com/home">
-        <input type="submit" value="twitter">
-    </form>
-</footer>
+    <!-- Hearder -->
+    <header>
+        <h1>Bienvenu chez les Grizzlys</h1>
+    </header>
+    <!-- fin Hearder -->
+
+    <!-- Section principale -->
+    <section class="main">
+        <!-- Actualités -->
+        <h1>Nos actualités</h1>
+        <div class="actuals">
+            <div class="games">
+
+            </div>
+        </div>
+        <!-- Fin actualités -->
+
+        <!-- Présentation de la boutique -->
+        <h1>Notre boutique</h1>
+        <div class="cards">
+            <div class="card">
+                <a href="https://grizzlys-baseball.vestiaire-officiel.com/shop/grizzlys-baseball/021031-312-FC-GRIZZLYSBASEBALL-U-95"><img src="images/Pull_grizzlys.jpeg"></a>
+                <div class="card-header">
+                    <h4 class="title">Pull Grizzlys</h4>
+                    <h4 class="price">29,95€</h4>
+                </div>
+                <div class="card-body">
+                    <p>Pull unisexe tête de grizzlys</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="https://grizzlys-baseball.vestiaire-officiel.com/shop/grizzlys-baseball/029030-313-FC-GRIZZLYSBASEBALL-H-580"><img src="images/T-shirt_grizzlys.jpeg"></a>
+                <div class="card-header">
+                    <h4 class="title">T-shirt Grizzlys</h4>
+                    <h4 class="price">17,95€</h4>
+                </div>
+                <div class="card-body">
+                    <p>T-shirt d'entrainement</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="https://grizzlys-baseball.vestiaire-officiel.com/shop/grizzlys-baseball/021037-312-FC-GRIZZLYSBASEBALL-U-95"><img src="images/Jogging_grizzlys.jpeg"></a>
+                <div class="card-header">
+                    <h4 class="title">Jogging Grizzlys</h4>
+                    <h4 class="price">29,95€</h4>
+                </div>
+                <div class="card-body">
+                    <p>Jogging d'entrainement</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin des cartes -->
+
+        <!-- Vidéo promo baseball -->
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L3Dy0y_Izsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Fin de vidéo -->
+    </section>
+    <!-- Fin de section principale -->
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; Contactez-nous ici </p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/LesGrizzlysdeGrenoble" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/grizzlys.grenoble/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-twitter-square"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+</body>
 </html>
